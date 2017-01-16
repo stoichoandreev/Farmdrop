@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/tools">
     <data>
         <variable
             name="detailsData"
@@ -28,7 +29,7 @@
                         android:layout_height="160dp"
                         android:layout_alignParentLeft="true"
                         android:scaleType="center"
-                        app:image="@{detailsData.image}"/>
+                        bind:image="@{detailsData.image}"/>
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"

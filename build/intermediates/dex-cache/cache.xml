@@ -138,21 +138,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.2.1_1611f6e12b44e132a21d99f6c6044c38847728cc.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.ryanharter.auto.value/auto-value-parcel/0.2.5/6ae055d153a9a49e25a3c2837fad8f4b173362a8/auto-value-parcel-0.2.5.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="6ae055d153a9a49e25a3c2837fad8f4b173362a8">
         <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/auto-value-parcel-0.2.5_0bb0bda47ef1227270483f3c5fd09963125015d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/io.reactivex/rxandroid/1.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.2.1_1611f6e12b44e132a21d99f6c6044c38847728cc.jar" />
     </item>
     <item
         is-multidex="false"

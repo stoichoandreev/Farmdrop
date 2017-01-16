@@ -46,35 +46,6 @@ public class ProducerListRepository extends BaseRepository implements IProducerL
                 .mapToList(ProducerLocalCacheData.SINGLE_ITEM_MAPPER);
     }
 
-    @Override
-    public void startSearchObserving(Callback<ProducersListResponseParseData> callback, Observable<SearchViewQueryTextEvent> searchViewQueryEventObservable) {
-        searchViewQueryEventObservable.map(searchQueryEventObservable -> searchQueryEventObservable.queryText().toString())
-                .switchMap(new Func1<String, Observable<ProducersListResponseParseData>>() {
-                    @Override
-                    public Observable<ProducersListResponseParseData> call(String s) {
-                        callback.onDataObserveStart();//send callback to display the progress
-                        return mApiService.getProducersList(1, 10).onErrorResumeNext(Observable.empty());//subscription will be terminated once an error is emitted, we should avoid that
-                    }
-                })
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(getRxSearchObserver(callback));
-    }
-    private Observer<ProducersListResponseParseData> getRxSearchObserver(Callback<ProducersListResponseParseData> callback) {
-        return new Observer<ProducersListResponseParseData>() {
-            @Override
-            public void onCompleted() {}
-
-            @Override
-            public void onError(Throwable e) {
-                callback.onError((!FarmDropApp.isOnline) ? new Throwable("You seems to be offline") : e);
-            }
-
-            @Override
-            public void onNext(ProducersListResponseParseData parseData) {
-                callback.onDataUpdated(parseData);
-            }
-        };
-    }
     private ProducersListResponseParseData writeToLocalCache(ProducersListResponseParseData producersParseResponse) {
         //check do we have something to insert/update
         boolean result = (producersParseResponse != null && producersParseResponse.producerData != null && producersParseResponse.producerData.size() > 0);

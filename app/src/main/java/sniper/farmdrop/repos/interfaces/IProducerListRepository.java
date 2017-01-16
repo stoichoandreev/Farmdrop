@@ -1,7 +1,5 @@
 package sniper.farmdrop.repos.interfaces;
 
-import com.jakewharton.rxbinding.widget.SearchViewQueryTextEvent;
-
 import java.util.List;
 
 import rx.Observable;
@@ -17,5 +15,4 @@ public interface IProducerListRepository extends IBaseRepository {
      */
     Observable<ProducersListResponseParseData> requestMoreProducersFromAPI(int page, int perPageLimit);
     Observable<List<ProducerLocalCacheData>> getAllLocalCacheProducers(int page);
-    void startSearchObserving(Callback<ProducersListResponseParseData> callback, Observable<SearchViewQueryTextEvent> searchViewQueryEventObservable);
 }

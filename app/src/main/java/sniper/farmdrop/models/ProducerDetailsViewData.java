@@ -295,7 +295,7 @@ public class ProducerDetailsViewData extends BaseObservable {
 
     //Annotated Binding adapter method must be static
     @BindingAdapter({"bind:image"})
-    public static void loadImage(ImageView view, String imageUrl) {
+    public static void setImage(ImageView view, String imageUrl) {
         Picasso.with(view.getContext())
                 .load(imageUrl)
                 .placeholder(R.drawable.placeholder)
