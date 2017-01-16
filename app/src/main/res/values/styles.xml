@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <item name="android:editTextStyle">@style/MyEditTextViewStyle</item>
+        <item name="drawerArrowStyle">@style/MyDrawerArrowToggle</item>
+    </style>
+
+    <!--Toolbar Style-->
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="elevation">2dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/drawer_menu_divider_color</item>
+    </style>
+
+    <!--Edit Text Styles with auto error messages-->
+    <style name="MyEditTextViewStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:theme">@style/AppTheme.EditText</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+        <item name="android:textColorHint">@color/text_color_primary</item>
+        <item name="colorControlNormal">@color/dark_grey</item>
+        <item name="android:colorBackgroundCacheHint">@color/dark_grey</item>
+    </style>
+    <style name="AppTheme.EditText" parent="Base.Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/dark_grey</item>
+        <item name="colorControlActivated">@color/dark_grey</item>
+        <item name="colorControlHighlight">@color/dark_grey</item>
+    </style>
+    <!--End Edit Text Styles-->
+
+    <!-- Style to use for All Text Views (including custom TextView - we don't have such items for now) -->
+    <style name="MyTextViewStyle" parent="@android:style/Widget.Holo.Light.TextView">
+        <item name="android:textAppearance">@style/TextAppearance</item>
+    </style>
+    <style name="TextAppearance" parent="@android:style/TextAppearance.Holo">
+        <item name="android:textSize">@dimen/text_size_primary</item>
+        <item name="android:textColor">@color/text_color_primary</item>
+    </style>
+    <style name="DetailImportantLabel" parent="TextAppearance">
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DetailNotImportantLabel">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <!--End Text Text Styling-->
+
+</resources>

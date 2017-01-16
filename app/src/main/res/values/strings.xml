@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Farm Drop</string>
+    <string name="search_title">Producer Search</string>
+    <string name="details_title">Producer Details</string>
+    <string name="search_label">Search producer by name</string>
+    <string name="search_hint">enter name here</string>
+    <string name="name_label">Name:&#160;</string>
+    <string name="permalink_label">Permalink:&#160;</string>
+    <string name="description_label">Description:&#160;</string>
+    <string name="location_label">Location:&#160;</string>
+    <string name="wholesaler_name_label">Wholesaler Name:&#160;</string>
+</resources>
