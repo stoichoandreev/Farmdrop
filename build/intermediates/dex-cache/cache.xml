@@ -12,21 +12,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9396de034f672fcff58a18be878672a1140e4205.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.ryanharter.auto.value/auto-value-parcel-adapter/0.2.5/743a98fe0082bd37d262155b646e9103f1bbba60/auto-value-parcel-adapter-0.2.5.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="743a98fe0082bd37d262155b646e9103f1bbba60">
         <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/auto-value-parcel-adapter-0.2.5_1145fc194330d0ce13dba68a6e2deb90876e8527.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/jsr305-2.0.1_a295d70f2184abfa625ee3fa27fcfd37f2d40201.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.google.android.apps.common.testing.accessibility.framework/accessibility-test-framework/2.0/7837f95bdff9f797003454247fef02b78d49ae75/accessibility-test-framework-2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7837f95bdff9f797003454247fef02b78d49ae75">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/accessibility-test-framework-2.0_a795dcc983a9ac18e11cc85a378c9e12768bfa19.jar" />
     </item>
     <item
         is-multidex="false"
@@ -39,12 +48,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.50/be504b4901d75cbe129a178f5830e6c358ec214c/bcprov-jdk15on-1.50.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_7fe05518b4e3258fbf54a13dce80ec88a08c14a9.jar" />
+        sha1="be504b4901d75cbe129a178f5830e6c358ec214c">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/bcprov-jdk15on-1.50_4e6945ada8fa6f0379efe4a5da24dde06683cb30.jar" />
     </item>
     <item
         is-multidex="false"
@@ -54,15 +63,6 @@
         revision="25.0.1"
         sha1="51033a5b8fcf7039159e35b6878f106ccd5fb35f">
         <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/auto-service-1.0-rc2_69967c0ed047f0b8244fe2296f35193e12ebacd0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sniper/Documents/Devepment/adt-bundle-mac-x86_64-20130522/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_09cc52775f026fca480503a8475464d98551d912.jar" />
     </item>
     <item
         is-multidex="false"
@@ -84,24 +84,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.2/ccde00f7ccc77af5a6d5752e2cb21f6d8998289f/okhttp-3.4.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ccde00f7ccc77af5a6d5752e2cb21f6d8998289f">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/okhttp-3.4.2_b70fb031d36ef9246b2892ca55f6ea311a0787db.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_3620411f7643b32fcb06c442dfa6331d659e2128.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -111,39 +93,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/mockwebserver/3.5.0/b367a062746513788ba7b5feb394db343ba66d52/mockwebserver-3.5.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_286814943aef118907312bc0a00c3d8ee41366a0.jar" />
+        sha1="b367a062746513788ba7b5feb394db343ba66d52">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/mockwebserver-3.5.0_6e368931cd0741c2f907cd82b5244e1c662a9d04.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support.test/runner/0.5/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_91e2a5ef08c387289be3b6fce7a4158499c97560.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_8a1b6cf8204611841e243d4ad9bb8611155b4abe.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.ryanharter.auto.value/auto-value-parcel/0.2.5/6ae055d153a9a49e25a3c2837fad8f4b173362a8/auto-value-parcel-0.2.5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6ae055d153a9a49e25a3c2837fad8f4b173362a8">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/auto-value-parcel-0.2.5_0bb0bda47ef1227270483f3c5fd09963125015d7.jar" />
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test-runner-0.5_443366c70fd0a56691a5c31bfa56cd82144a813b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -153,6 +117,15 @@
         revision="25.0.1"
         sha1="5a2386ad9bfff580b206a7fe305cdccd00798159">
         <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/io.reactivex-rxandroid-1.2.1_1611f6e12b44e132a21d99f6c6044c38847728cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/hamcrest-core-1.3_29774ac81747434b41db63e50a1aeafa4d5c7d11.jar" />
     </item>
     <item
         is-multidex="false"
@@ -183,33 +156,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_dd476bc266bceca4d767a10d103693f688a23ef4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_159b5010d7ebf81f8a866c216e40741771badf86.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.1.0_2a108a30378f71ea83cff4b4bf834a64c956c15e.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -225,15 +171,6 @@
         revision="25.0.1"
         sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
         <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_3ab6e0763cda20efae6f859e1b3b136f196bd266.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_82d6f52787642d10c421f68e1506ce980a3e4e0a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -255,30 +192,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_e9e2e3fc48284b100367c36d6fe662d943312f45.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_5f86b9b1c55786cd73c7b1156103056bbc2b0db0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/gson-2.7_eba60e1c3fbead179690685ac9b675af52ea6cc6.jar" />
+        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/hamcrest-library-1.3_bedda33142e5fcab4258563ecdf4f44dec4a065b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -291,12 +210,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support.test/exposed-instrumentation-api-publish/0.5/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_262edc2ac1c3defb390903539f01e905b8d0d2b8.jar" />
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test-exposed-instrumentation-api-publish-0.5_af381b47d36efda6413e794e9054c3b6ec1baf62.jar" />
     </item>
     <item
         is-multidex="false"
@@ -327,15 +246,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.google.auto.value/auto-value/1.3/4961194f62915eb45e21940537d60ac53912c57d/auto-value-1.3.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="4961194f62915eb45e21940537d60ac53912c57d">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/auto-value-1.3_c18b5122cb18ccef50b12843343388dd3e58c815.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -354,6 +264,267 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Applications/Android Studio2.0.app/Contents/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/guava-18.0_1d6d238903d34d47540c3fde89a3915133c38d4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-contrib/2.2.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="56576e0b04aae5e9756bf6e791f74b5e3850ac03">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test.espresso-espresso-contrib-2.2.2_163a9fe5bedbb4bbafaadc5fea9b58ed81f4a61c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_9396de034f672fcff58a18be878672a1140e4205.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test-rules-0.5_98c27d7243d4560453954a6af17a2a6c1430abfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-core/2.2.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test.espresso-espresso-core-2.2.2_a5e84ca56a86006592eb4efdeed45100c70565d8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_7fe05518b4e3258fbf54a13dce80ec88a08c14a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/Documents/Devepment/adt-bundle-mac-x86_64-20130522/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_09cc52775f026fca480503a8475464d98551d912.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.2/ccde00f7ccc77af5a6d5752e2cb21f6d8998289f/okhttp-3.4.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ccde00f7ccc77af5a6d5752e2cb21f6d8998289f">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/okhttp-3.4.2_b70fb031d36ef9246b2892ca55f6ea311a0787db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_3620411f7643b32fcb06c442dfa6331d659e2128.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/junit-4.12_f9f9cd34904f7716766b3eb969062103b2fb205d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/javax.inject-1_3ed94dac104059fea00c55b34918111532a703d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_286814943aef118907312bc0a00c3d8ee41366a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-integration/1.3/5de0c73fef18917cd85d0ab70bb23818685e4dfd/hamcrest-integration-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/hamcrest-integration-1.3_c77ea1d25d3aae10e8adb9f17138b12f382d7553.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit-mock/2.1.0/ae1dbbe1b9d17afb1d93b1eb3fd23dfc07ff6be4/retrofit-mock-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ae1dbbe1b9d17afb1d93b1eb3fd23dfc07ff6be4">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/retrofit-mock-2.1.0_cee6b32ed144b94ec18f21cd68b1cf5fb1cd44dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_91e2a5ef08c387289be3b6fce7a4158499c97560.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_8a1b6cf8204611841e243d4ad9bb8611155b4abe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.ryanharter.auto.value/auto-value-parcel/0.2.5/6ae055d153a9a49e25a3c2837fad8f4b173362a8/auto-value-parcel-0.2.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6ae055d153a9a49e25a3c2837fad8f4b173362a8">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/auto-value-parcel-0.2.5_0bb0bda47ef1227270483f3c5fd09963125015d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_dd476bc266bceca4d767a10d103693f688a23ef4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_159b5010d7ebf81f8a866c216e40741771badf86.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-idling-resource/2.2.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a890ee8445927649d9ed50f625a315d8758688be">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test.espresso-espresso-idling-resource-2.2.2_899877dac90a9a27ff907386322336d4a09b3157.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/adapter-rxjava/2.1.0/693eddc23e87ab13f9cf5001707ce8e7e1d1ff01/adapter-rxjava-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="693eddc23e87ab13f9cf5001707ce8e7e1d1ff01">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/adapter-rxjava-2.1.0_2a108a30378f71ea83cff4b4bf834a64c956c15e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_82d6f52787642d10c421f68e1506ce980a3e4e0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/javax.annotation-api-1.2_a327d3c0fea751df762cefbeb6e87794e4e8db2e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/converter-gson-2.1.0_e9e2e3fc48284b100367c36d6fe662d943312f45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_5f86b9b1c55786cd73c7b1156103056bbc2b0db0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/gson-2.7_eba60e1c3fbead179690685ac9b675af52ea6cc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/retrofit-2.1.0_262edc2ac1c3defb390903539f01e905b8d0d2b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.1.1/67ff45d9ae02e583d0f9b3432a5ebbe05c30c966/javawriter-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/javawriter-2.1.1_0fba8287ee37a9956d26c07f24cbf55a5a829450.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/sniper/.gradle/caches/modules-2/files-2.1/com.google.auto.value/auto-value/1.3/4961194f62915eb45e21940537d60ac53912c57d/auto-value-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4961194f62915eb45e21940537d60ac53912c57d">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/auto-value-1.3_c18b5122cb18ccef50b12843343388dd3e58c815.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.squareup.sqlbrite/sqlbrite/1.1.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -369,15 +540,6 @@
         revision="25.0.1"
         sha1="4fdcf1fc27c1a8f55d1109df986c923152f07759">
         <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/javapoet-1.7.0_d43d080a1e17c9543fff0a212184d86b43bfac36.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Applications/Android Studio2.0.app/Contents/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.1"
-        sha1="cce0823396aa693798f8882e64213b1772032b09">
-        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/debug/guava-18.0_1d6d238903d34d47540c3fde89a3915133c38d4b.jar" />
     </item>
 
 </items>
