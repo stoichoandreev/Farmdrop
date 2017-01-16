@@ -23,22 +23,18 @@ import sniper.farmdrop.ui.views.ProducerListView;
 
 public class ProducerListPresenter extends BasePresenter<ProducerListView, IProducerListRepository> implements RecyclerItemClickListener.OnItemClickListener {
 
-    private int producersPage = 0;
     public static final int PRODUCER_PER_PAGE_LIMIT = 10;
 
     public ProducerListPresenter(ProducerListView view, IProducerListRepository repository){
         super(view, repository);
     }
 
-    public void getProducerList(){
-
-        producersPage++;
-
-        Observable<ProducersListResponseParseData> observable = mRepository.requestMoreProducersFromAPI(producersPage, PRODUCER_PER_PAGE_LIMIT);
+    public void getProducerList(final int currentPage){
+        Observable<ProducersListResponseParseData> observable = mRepository.requestMoreProducersFromAPI(currentPage, PRODUCER_PER_PAGE_LIMIT);
         addSubscription(observable.subscribe(new Subscriber<ProducersListResponseParseData>() {
             @Override
             public void onCompleted() {
-                mView.setProgressVisibility(View.INVISIBLE);
+//                mView.setProgressVisibility(View.INVISIBLE);
             }
 
             @Override
@@ -48,7 +44,7 @@ public class ProducerListPresenter extends BasePresenter<ProducerListView, IProd
 
             @Override
             public void onNext(ProducersListResponseParseData producersList) {
-                mView.onProducerListReady(ProducerViewData.fromRaw(producersList.producerData));
+                mView.onProducerListReady(ProducerViewData.fromRaw(producersList.producerData), (producersList.pagination != null && producersList.pagination.current != null) ? producersList.pagination.current : 0);
 //                mView.onProducerListReady(ProducerViewData.fromCache(producersCacheList));
             }
         }));

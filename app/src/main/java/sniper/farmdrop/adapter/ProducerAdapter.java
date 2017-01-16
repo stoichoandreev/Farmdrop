@@ -23,11 +23,6 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
 
     private List<ProducerViewData> mProducers = new ArrayList<>();
 
-    public ProducerAdapter(@NonNull List<ProducerViewData> movies) {
-        super();
-        this.mProducers.addAll(movies);
-    }
-
     @Override
     public BindingMovieViewHolder onCreateViewHolder(ViewGroup parent, int type) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_producer_result, parent, false);
@@ -46,9 +41,13 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
         return mProducers.size();
     }
     public void setMoreProducers(List<ProducerViewData> producers){
-        this.mProducers.clear();
-        if(producers != null) this.mProducers.addAll(producers);
-        notifyDataSetChanged();
+        //Only if we have something to insert
+        if(producers != null && producers.size() > 0) {
+            final int insertStart = mProducers.size();
+            final int insertSize = producers.size();
+            this.mProducers.addAll(producers);
+            notifyItemRangeInserted(insertStart, insertSize);
+        }
     }
     public static class BindingMovieViewHolder extends RecyclerView.ViewHolder {
         private ViewDataBinding viewHolderBinding;
