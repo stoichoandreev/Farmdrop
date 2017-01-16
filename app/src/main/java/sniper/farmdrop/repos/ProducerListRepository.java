@@ -1,5 +1,7 @@
 package sniper.farmdrop.repos;
 
+import android.database.sqlite.SQLiteDatabase;
+
 import com.jakewharton.rxbinding.widget.SearchViewQueryTextEvent;
 import com.squareup.sqlbrite.BriteDatabase;
 
@@ -95,7 +97,7 @@ public class ProducerListRepository extends BaseRepository implements IProducerL
                                     .viaWholesaler(producer.viaWholesaler)
                                     .wholesalerName(producer.name)
                                     .page(page)
-                            .build());
+                            .build(), SQLiteDatabase.CONFLICT_REPLACE);
                 }
                 transaction.markSuccessful();
                 result = true;

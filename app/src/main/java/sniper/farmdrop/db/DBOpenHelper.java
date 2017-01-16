@@ -27,8 +27,8 @@ public final class DBOpenHelper extends SQLiteOpenHelper {
             + ProducerLocalCacheData.LOCATION + " TEXT NOT NULL,"
             + ProducerLocalCacheData.VIA_WHOLESALER + " INTEGER NOT NULL DEFAULT 0,"
             + ProducerLocalCacheData.WHOLESALER_NAME + " TEXT NOT NULL,"
-            + ProducerLocalCacheData.PAGE + " INTEGER NOT NULL"
-            + ")";
+            + ProducerLocalCacheData.PAGE + " INTEGER NOT NULL,"
+            + "UNIQUE ("+ProducerLocalCacheData.PRODUCER_ID+") ON CONFLICT REPLACE)";
 
     public DBOpenHelper(Context context) {
         super(context, "farmdrop.db", null , VERSION);
