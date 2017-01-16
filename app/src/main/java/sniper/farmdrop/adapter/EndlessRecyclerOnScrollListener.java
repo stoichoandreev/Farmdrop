@@ -74,4 +74,12 @@ public abstract class EndlessRecyclerOnScrollListener extends RecyclerView.OnScr
     public void setStepsBeforeNextLoad(int steps) {
         this.stepsBeforeNextLoad = steps;
     }
+
+    /**
+     * Get the position index of the first item in the list
+     * @return - the first visible position
+     */
+    public int getFirstPosition() {
+        return mLinearLayoutManager.findFirstVisibleItemPosition();
+    }
 }

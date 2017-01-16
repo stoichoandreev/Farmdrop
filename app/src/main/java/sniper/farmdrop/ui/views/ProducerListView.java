@@ -13,4 +13,6 @@ public interface ProducerListView extends BaseView{
     void openDetailsScreen(int position);
     void setIsResuming(boolean isResume);
     boolean isResuming();
+    void filterProducersList(String queryText);
+    void scrollListToPosition(int position);
 }

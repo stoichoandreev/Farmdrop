@@ -10,7 +10,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
+import rx.Observer;
 import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Func1;
+import rx.schedulers.Schedulers;
+import sniper.farmdrop.FarmDropApp;
 import sniper.farmdrop.api.pojos.producers_list.ProducersListResponseParseData;
 import sniper.farmdrop.listeners.RecyclerItemClickListener;
 import sniper.farmdrop.models.ProducerViewData;
@@ -57,34 +62,27 @@ public class ProducerListPresenter extends BasePresenter<ProducerListView, IProd
 
     public void setupSearchView(SearchView searchView) {
         if(searchView == null) return;
-        final Observable<SearchViewQueryTextEvent> searchViewQueryTextEventObservable = RxSearchView.queryTextChangeEvents(searchView)
+        final Observable<CharSequence> searchViewQueryTextEventObservable = RxSearchView.queryTextChanges(searchView)
                 .debounce(400, TimeUnit.MILLISECONDS)
-                .filter(searchViewQueryTextChangeEvent -> {
-                    final String queryText = searchViewQueryTextChangeEvent.queryText().toString();
-                    //if the view is not resuming and searchText has some input then proceed further
-                    final boolean filter = (queryText.length() > 0 && !mView.isResuming());
-                    mView.setIsResuming(false);
-                    return filter;
+                .filter(charSequence -> {
+                    //we can filter here some queries and stop them go to adapter
+                    return true;
                 });
-        mRepository.startSearchObserving(new IProducerListRepository.Callback<ProducersListResponseParseData>(){
+        searchViewQueryTextEventObservable
+//                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<CharSequence>() {
+                    @Override
+                    public void onCompleted() {}
 
-            @Override
-            public void onDataObserveStart() {
-                mView.setProgressVisibility(View.VISIBLE);
-            }
-            @Override
-            public void onDataUpdated(ProducersListResponseParseData data) {
-                mView.setProgressVisibility(View.INVISIBLE);
-//                mView.onProducerListReady(data);
-            }
-            @Override
-            public void onListDataUpdated(List<ProducersListResponseParseData> data) {
-            }
-            @Override
-            public void onError(Throwable throwable) {
-                mView.setProgressVisibility(View.INVISIBLE);
-                mView.onRepositoryErrorOccurred(throwable);
-            }
-        }, searchViewQueryTextEventObservable);
+                    @Override
+                    public void onError(Throwable e) {
+                    }
+
+                    @Override
+                    public void onNext(CharSequence queryTextEvent) {
+                        mView.filterProducersList(queryTextEvent.toString());
+                    }
+                });
     }
 }

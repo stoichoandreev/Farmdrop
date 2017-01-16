@@ -2,8 +2,8 @@ package sniper.farmdrop.adapter;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +11,15 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import rx.Observable;
+import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
+import rx.subscriptions.CompositeSubscription;
 import sniper.farmdrop.BR;
 import sniper.farmdrop.R;
 import sniper.farmdrop.models.ProducerViewData;
+import sniper.farmdrop.ui.views.ProducerListView;
 
 /**
  * Created by sniper on 01/13/17.
@@ -22,6 +28,14 @@ import sniper.farmdrop.models.ProducerViewData;
 public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.BindingMovieViewHolder> {
 
     private List<ProducerViewData> mProducers = new ArrayList<>();
+    private List<ProducerViewData> mFilterProducers = new ArrayList<>();
+    private boolean isFilterMode;
+    private CompositeSubscription mCompositeSubscription;
+    private int lastNonFilterStartingPosition;//save the last state of the adapter before filtering start
+
+    public ProducerAdapter() {
+        this.mCompositeSubscription = new CompositeSubscription();
+    }
 
     @Override
     public BindingMovieViewHolder onCreateViewHolder(ViewGroup parent, int type) {
@@ -31,14 +45,14 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
 
     @Override
     public void onBindViewHolder(BindingMovieViewHolder holder, int position) {
-        final ProducerViewData producerViewData = mProducers.get(position);
+        final ProducerViewData producerViewData = getProducer(position);
         holder.getBinding().setVariable(BR.producer, producerViewData);
         holder.getBinding().executePendingBindings();
     }
 
     @Override
     public int getItemCount() {
-        return mProducers.size();
+        return isFilterMode ? mFilterProducers.size() : mProducers.size();
     }
     public void setMoreProducers(List<ProducerViewData> producers){
         //Only if we have something to insert
@@ -49,10 +63,10 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
             notifyItemRangeInserted(insertStart, insertSize);
         }
     }
-    public static class BindingMovieViewHolder extends RecyclerView.ViewHolder {
+    static class BindingMovieViewHolder extends RecyclerView.ViewHolder {
         private ViewDataBinding viewHolderBinding;
 
-        public BindingMovieViewHolder(View v) {
+        BindingMovieViewHolder(View v) {
             super(v);
             viewHolderBinding = DataBindingUtil.bind(v);
         }
@@ -62,6 +76,49 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
         }
     }
     public ProducerViewData getProducer(int position){
-        return (position >= 0 && position < mProducers.size()) ? mProducers.get(position) : null;
+        return (position >= 0 && position < getItemCount()) ? (isFilterMode? mFilterProducers.get(position) : mProducers.get(position) ) : null;
+    }
+    public void filter(String filterText, ProducerListView view, int firstVisiblePosition){
+        mFilterProducers.clear();
+        if(!isFilterMode){
+            lastNonFilterStartingPosition = firstVisiblePosition;
+        }
+        isFilterMode = (filterText != null && filterText.trim().length() > 0);
+        //remove filter mode and show all items if query is empty (when filter search finish)
+        if(!isFilterMode){
+            notifyDataSetChanged();
+            view.scrollListToPosition(lastNonFilterStartingPosition);
+            clearAllSubscriptions();
+            return;
+        }
+
+        Observable.from(mProducers)
+                .subscribeOn(Schedulers.io())
+                .filter(producerViewData -> producerViewData.getName() != null ? producerViewData.getName().toLowerCase().startsWith(filterText.toLowerCase()) : false)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Subscriber<ProducerViewData>() {
+                    @Override
+                    public void onCompleted() {
+                        notifyDataSetChanged();//When filter finish notify adapter
+                    }
+                    @Override
+                    public void onError(Throwable e) {
+                        Log.e("Filter","error");
+                    }
+                    @Override
+                    public void onNext(ProducerViewData producerViewData) {
+                        mFilterProducers.add(producerViewData);
+                    }
+                });
+    }
+
+    /**
+     * Use this method to clear all Subscriptions after filter search has been finished
+     */
+    private void clearAllSubscriptions(){
+        if(mCompositeSubscription != null) {
+            mCompositeSubscription.unsubscribe();
+            mCompositeSubscription = new CompositeSubscription();
+        }
     }
 }

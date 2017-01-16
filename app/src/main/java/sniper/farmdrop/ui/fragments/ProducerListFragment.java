@@ -133,6 +133,16 @@ public class ProducerListFragment extends BaseFragment<ProducerListPresenter> im
     }
 
     @Override
+    public void filterProducersList(String queryText) {
+        producerAdapter.filter(queryText, this, endlessListener.getFirstPosition());
+    }
+
+    @Override
+    public void scrollListToPosition(int position) {
+        endlessListener.getLinearLayoutManager().scrollToPosition(position);
+    }
+
+    @Override
     public void onRepositoryErrorOccurred(Throwable error) {
         if(getView() != null) {
             Toast.makeText(mActivity, error.getMessage(), Toast.LENGTH_LONG).show();
