@@ -33,7 +33,6 @@ public class ProducerListFragment extends BaseFragment<ProducerListPresenter> im
     private FragmentProducerListBinding fragmentBinding;
     private ProducerAdapter producerAdapter;
     private EndlessRecyclerOnScrollListener endlessListener;
-    private boolean isResuming;
 
     @UiThread
     public static ProducerListFragment newInstance(@Nullable Bundle args) {
@@ -89,12 +88,6 @@ public class ProducerListFragment extends BaseFragment<ProducerListPresenter> im
     }
 
     @Override
-    public void onPause() {
-        super.onPause();
-        isResuming = true;
-    }
-
-    @Override
     public void notifyFragmentAboutAction(FragmentAction fragmentAction) {
         switch (fragmentAction) {
             case ACTION_CONNECTIVITY_CHANGE:
@@ -120,16 +113,6 @@ public class ProducerListFragment extends BaseFragment<ProducerListPresenter> im
         final Bundle bundle = new Bundle();
         bundle.putSerializable(DetailsProducerFragment.PRODUCER_DATA, producerAdapter.getProducer(position));
         mActivity.replaceFragment(DetailsProducerFragment.newInstance(bundle), true);
-    }
-
-    @Override
-    public void setIsResuming(boolean isResume) {
-        this.isResuming = isResume;
-    }
-
-    @Override
-    public boolean isResuming() {
-        return isResuming;
     }
 
     @Override

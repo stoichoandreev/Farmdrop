@@ -94,7 +94,7 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
 
         Observable.from(mProducers)
                 .subscribeOn(Schedulers.io())
-                .filter(producerViewData -> producerViewData.getName() != null ? producerViewData.getName().toLowerCase().startsWith(filterText.toLowerCase()) : false)
+                .filter(producerViewData -> producerViewData.getName() != null && producerViewData.getName().toLowerCase().startsWith(filterText.toLowerCase()))
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<ProducerViewData>() {
                     @Override

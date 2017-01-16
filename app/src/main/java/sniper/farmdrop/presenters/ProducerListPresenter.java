@@ -69,15 +69,13 @@ public class ProducerListPresenter extends BasePresenter<ProducerListView, IProd
                     return true;
                 });
         searchViewQueryTextEventObservable
-//                .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<CharSequence>() {
                     @Override
                     public void onCompleted() {}
 
                     @Override
-                    public void onError(Throwable e) {
-                    }
+                    public void onError(Throwable e) {}
 
                     @Override
                     public void onNext(CharSequence queryTextEvent) {

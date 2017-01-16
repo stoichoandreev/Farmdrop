@@ -11,8 +11,6 @@ import sniper.farmdrop.models.ProducerViewData;
 public interface ProducerListView extends BaseView{
     void onProducerListReady(List<ProducerViewData> producersListResult, int page);
     void openDetailsScreen(int position);
-    void setIsResuming(boolean isResume);
-    boolean isResuming();
     void filterProducersList(String queryText);
     void scrollListToPosition(int position);
 }
