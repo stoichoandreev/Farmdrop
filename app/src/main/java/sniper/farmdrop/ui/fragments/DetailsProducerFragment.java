@@ -104,14 +104,6 @@ public class DetailsProducerFragment extends BaseFragment<DetailsProducerPresent
     @Override
     public void setProgressVisibility(int visibility) {
         fragmentBinding.loadingView.setVisibility(visibility);
-        switch (visibility){
-            case View.VISIBLE:
-                fragmentBinding.detailsContainer.setVisibility(View.GONE);
-                break;
-            case View.GONE:
-            case View.INVISIBLE:
-                fragmentBinding.detailsContainer.setVisibility(View.VISIBLE);
-                break;
-        }
+
     }
 }

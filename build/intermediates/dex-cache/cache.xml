@@ -201,6 +201,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support.test.espresso/espresso-intents/2.2.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="efc9e293447db1929eb3853a3f83e8f46a957436">
+        <dex dex="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/pre-dexed/androidTest/debug/com.android.support.test.espresso-espresso-intents-2.2.2_815180e525b077d285a92f1b4078967636a475b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Volumes/Yamaha/Git Hub/farmdrop/farmdrop/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"

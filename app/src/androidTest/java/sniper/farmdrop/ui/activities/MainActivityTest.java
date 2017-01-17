@@ -36,8 +36,9 @@ public class MainActivityTest {
     }
     @Test
     public void testFragmentContainer(){
-        onView(withId(R.id.activity_fragment_container)).check(matches(isDisplayed()));
-        onView(withId(R.id.activity_fragment_container)).check(matches(not(isClickable())));
-        onView(withId(R.id.activity_fragment_container)).check(matches(withParent(withClassName(containsString(LinearLayout.class.getCanonicalName())))));
+        onView(withId(R.id.activity_fragment_container))
+                .check(matches(isDisplayed()))
+                .check(matches(not(isClickable())))
+                .check(matches(withParent(withClassName(containsString(LinearLayout.class.getCanonicalName())))));
     }
 }

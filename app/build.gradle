@@ -136,6 +136,9 @@ ext {
         androidTestCompile("com.android.support.test.espresso:espresso-core:$espresso") {
             exclude module: 'support-annotations'
         }
+        androidTestCompile("com.android.support.test.espresso:espresso-intents:$espresso") {
+            exclude module: 'support-annotations'
+        }
         androidTestCompile("com.squareup.okhttp3:mockwebserver:$mockServer") {
             exclude group: 'com.squareup.okhttp3', module: 'okhttp'
         }

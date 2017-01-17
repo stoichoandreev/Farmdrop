@@ -3,6 +3,7 @@ package sniper.farmdrop.ui.fragments;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.os.Bundle;
 import android.support.test.rule.ActivityTestRule;
 
 import org.junit.Assert;
@@ -19,6 +20,7 @@ public class FragmentTestRule <F extends Fragment> extends ActivityTestRule<Main
 
     private final Class<F> mFragmentClass;
     private F mFragment;
+    private Bundle fragmentArguments;
 
     public FragmentTestRule(final Class<F> fragmentClass) {
         super(MainActivity.class, true, false);
@@ -35,6 +37,7 @@ public class FragmentTestRule <F extends Fragment> extends ActivityTestRule<Main
                 FragmentManager manager = getActivity().getFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
                 mFragment = mFragmentClass.newInstance();
+                mFragment.setArguments(fragmentArguments);
                 transaction.replace(R.id.activity_fragment_container, mFragment);
                 transaction.commit();
             } catch (Exception e) {
@@ -47,5 +50,8 @@ public class FragmentTestRule <F extends Fragment> extends ActivityTestRule<Main
     }
     public F getFragment(){
         return mFragment;
+    }
+    public void setFragmentArguments(Bundle args){
+        this.fragmentArguments = args;
     }
 }

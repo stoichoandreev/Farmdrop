@@ -31,7 +31,7 @@ import sniper.farmdrop.ui.views.ProducerListView;
 public class ProducerListFragment extends BaseFragment<ProducerListPresenter> implements ProducerListView {
 
     private FragmentProducerListBinding fragmentBinding;
-    private ProducerAdapter producerAdapter;
+    protected ProducerAdapter producerAdapter;
     private EndlessRecyclerOnScrollListener endlessListener;
 
     @UiThread
@@ -45,7 +45,7 @@ public class ProducerListFragment extends BaseFragment<ProducerListPresenter> im
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPresenter = new ProducerListPresenter(this, new ProducerListRepository());
-        producerAdapter = new ProducerAdapter();
+        producerAdapter = new ProducerAdapter(R.layout.list_item_producer_result);
     }
 
     @Override //No implementation need at the moment

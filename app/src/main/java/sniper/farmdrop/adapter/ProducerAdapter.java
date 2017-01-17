@@ -2,6 +2,7 @@ package sniper.farmdrop.adapter;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;
+import android.support.annotation.LayoutRes;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -32,14 +33,16 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
     private boolean isFilterMode;
     private CompositeSubscription mCompositeSubscription;
     private int lastNonFilterStartingPosition;//save the last state of the adapter before filtering start
+    private int layoutResource;
 
-    public ProducerAdapter() {
+    public ProducerAdapter(@LayoutRes int layout) {
         this.mCompositeSubscription = new CompositeSubscription();
+        this.layoutResource = layout;
     }
 
     @Override
     public BindingMovieViewHolder onCreateViewHolder(ViewGroup parent, int type) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item_producer_result, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(getLayoutResource(), parent, false);
         return new BindingMovieViewHolder(v);
     }
 
@@ -63,6 +66,7 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
             notifyItemRangeInserted(insertStart, insertSize);
         }
     }
+
     static class BindingMovieViewHolder extends RecyclerView.ViewHolder {
         private ViewDataBinding viewHolderBinding;
 
@@ -120,5 +124,20 @@ public class ProducerAdapter extends RecyclerView.Adapter<ProducerAdapter.Bindin
             mCompositeSubscription.unsubscribe();
             mCompositeSubscription = new CompositeSubscription();
         }
+    }
+    public int getLayoutResource() {
+        return layoutResource;
+    }
+
+    public List<ProducerViewData> getProducers() {
+        return mProducers;
+    }
+
+    public List<ProducerViewData> getFilterProducers() {
+        return mFilterProducers;
+    }
+
+    public boolean isFilterMode() {
+        return isFilterMode;
     }
 }
