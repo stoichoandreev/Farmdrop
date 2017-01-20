@@ -2,11 +2,13 @@ package sniper.farmdrop.ui.fragments;
 
 import android.support.v7.widget.RecyclerView;
 
+import org.hamcrest.Matchers;
 import org.junit.Rule;
 import org.junit.Test;
 
 import sniper.farmdrop.AndroidMyTestUtils;
 import sniper.farmdrop.R;
+import sniper.farmdrop.ui.views.ProducerListView;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.matcher.ViewMatchers.assertThat;
@@ -23,6 +25,18 @@ public class ProducerListFragmentTest {
 
     @Rule
     public FragmentTestRule<ProducerListFragment> mFragmentTestRule = new FragmentTestRule<>(ProducerListFragment.class);
+
+    @Test
+    public void testProducerListViewImplementation() throws Exception {
+        //
+        mFragmentTestRule.launchActivity(null);
+        //We need to add some delay to give a chance to fragment to init its views and him self
+        onView(withId(R.id.producers_list_rv)).perform(
+                AndroidMyTestUtils.waitForWhile(200, RecyclerView.class, () -> {
+                    //check does our Fragment implement the right Interface
+                    assertThat(AndroidMyTestUtils.implementsInterface(mFragmentTestRule.getFragment(), ProducerListView.class), Matchers.equalTo(true));
+                }));
+    }
 
     @Test
     public void testInitialStateOfProducerListAdapter() throws Exception {

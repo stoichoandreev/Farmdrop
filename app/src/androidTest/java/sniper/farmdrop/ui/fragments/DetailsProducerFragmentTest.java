@@ -8,18 +8,21 @@ import android.view.View;
 import android.widget.TextView;
 
 import org.hamcrest.Matcher;
+import org.hamcrest.Matchers;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 
+import sniper.farmdrop.AndroidMyTestUtils;
 import sniper.farmdrop.R;
 import sniper.farmdrop.models.ProducerViewData;
+import sniper.farmdrop.ui.views.DetailsProducerView;
 
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.assertThat;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
-import static org.hamcrest.Matchers.anything;
 import static org.hamcrest.Matchers.not;
 
 /**
@@ -57,6 +60,18 @@ public class DetailsProducerFragmentTest {
         Bundle args = new Bundle();
         args.putSerializable(DetailsProducerFragment.PRODUCER_DATA, mockProducerData);
         mFragmentTestRule.setFragmentArguments(args);
+    }
+
+    @Test
+    public void testViewImplementation() throws Exception {
+        //
+        mFragmentTestRule.launchActivity(null);
+        //We need to add some delay to give a chance to fragment to init its views and him self
+        onView(withId(R.id.loading_view)).perform(
+                AndroidMyTestUtils.waitForWhile(200, TextView.class, () -> {
+                    //check does our Fragment implement the right Interface
+                    assertThat(AndroidMyTestUtils.implementsInterface(mFragmentTestRule.getFragment(), DetailsProducerView.class), Matchers.equalTo(true));
+                }));
     }
 
     @Test

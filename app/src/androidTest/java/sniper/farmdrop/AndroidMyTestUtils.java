@@ -29,6 +29,12 @@ import static android.support.test.espresso.matcher.ViewMatchers.withId;
 
 public class AndroidMyTestUtils {
     /**
+     * Simple callback interface when Waiting finish
+     */
+    public interface TestCallBack{
+        void onWaitFinish();
+    }
+    /**
      * Use this method to set hour and minute to TimePicker view
      * @param hour
      * @param minute
@@ -188,8 +194,14 @@ public class AndroidMyTestUtils {
         });
         return stringHolder[0];
     }
-    public interface TestCallBack{
-        void onWaitFinish();
-    }
 
+    /**
+     * Use this method to test does some object implement some Interface
+     * @param object - the instance of the object
+     * @param interF - the interface which need to be tested for implementation
+     * @return - true of the interface has been implemented
+     */
+    public static boolean implementsInterface(Object object, Class interF){
+        return interF.isInstance(object);
+    }
 }
