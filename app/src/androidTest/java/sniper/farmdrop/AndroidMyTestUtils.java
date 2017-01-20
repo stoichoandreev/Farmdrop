@@ -202,6 +202,7 @@ public class AndroidMyTestUtils {
      * @return - true of the interface has been implemented
      */
     public static boolean implementsInterface(Object object, Class interF){
-        return interF.isInstance(object);
+        //interF.isInstance(object) will not fail if object is null, that is why we need object check
+        return object != null && interF.isInstance(object);
     }
 }
