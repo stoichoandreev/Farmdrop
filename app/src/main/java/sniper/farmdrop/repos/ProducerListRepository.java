@@ -12,6 +12,7 @@ import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Func1;
 import sniper.farmdrop.FarmDropApp;
+import sniper.farmdrop.api.ApiService;
 import sniper.farmdrop.api.pojos.producers_list.ProducerParseData;
 import sniper.farmdrop.api.pojos.producers_list.ProducersListResponseParseData;
 import sniper.farmdrop.db.models.ProducerLocalCacheData;
@@ -21,6 +22,10 @@ public class ProducerListRepository extends BaseRepository implements IProducerL
 
     public static final String PRODUCER_LIST_QUERY = "SELECT * FROM " + ProducerLocalCacheData.TABLE;
     public static final String PRODUCER_LIST_BY_PAGE_QUERY = "SELECT * FROM " + ProducerLocalCacheData.TABLE +" WHERE "+ ProducerLocalCacheData.PAGE+" = ?";
+
+    public ProducerListRepository(ApiService mApiService, BriteDatabase mDataBase) {
+        super(mApiService, mDataBase);
+    }
 
     @Override
     public Observable<ProducersListResponseParseData> requestMoreProducersFromAPI(int page, int perPageLimit) {

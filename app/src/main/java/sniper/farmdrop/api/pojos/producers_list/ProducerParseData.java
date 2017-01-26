@@ -1,5 +1,6 @@
 package sniper.farmdrop.api.pojos.producers_list;
 
+import com.google.auto.value.AutoValue;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -43,4 +44,9 @@ public class ProducerParseData {
     @SerializedName("wholesaler_name")
     @Expose
     public String wholesalerName;
+
+    public String name() {
+        return name;
+    }
+
 }

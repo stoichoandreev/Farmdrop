@@ -1,0 +1,31 @@
+{
+  "response": [
+    {
+      "id": 170,
+      "name": "Purton House Organics",
+      "permalink": "purton-house-organics",
+      "created_at": "2014-04-14T10:38:55.267+01:00",
+      "updated_at": "2016-11-30T11:07:16.000+00:00",
+      "images": [
+        {
+          "path": "https://fd-v5-api-release.imgix.net/assets/producer/33ceef48bff5238c88ccda3eecd3d04d3f13d618fcfb59815b0cef31350c65d1/purton_rally_540by415.jpg",
+          "position": 1
+        }
+      ],
+      "short_description": "Mother and daughter-­run Purton House Organics supplies much of our fruit and vegetables, as well as organic beef, pork and eggs",
+      "description": "Mother and daughter-­.....",
+      "location": "Purton, Wiltshire",
+      "via_wholesaler": true,
+      "wholesaler_name": "Purton House Organics"
+    }
+  ],
+  "count": 1,
+  "pagination": {
+    "current": 1,
+    "previous": null,
+    "next": 2,
+    "per_page": 10,
+    "pages": 17,
+    "count": 166
+  }
+}

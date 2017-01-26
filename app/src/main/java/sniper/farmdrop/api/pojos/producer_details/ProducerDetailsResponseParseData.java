@@ -13,4 +13,5 @@ public class ProducerDetailsResponseParseData {
     @SerializedName("response")
     @Expose
     public ProducerParseData producerDetailsParseData;
+
 }

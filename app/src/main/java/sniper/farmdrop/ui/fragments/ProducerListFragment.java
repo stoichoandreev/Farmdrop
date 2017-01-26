@@ -11,9 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 import java.util.List;
+
+import sniper.farmdrop.FarmDropApp;
 import sniper.farmdrop.R;
 import sniper.farmdrop.adapter.EndlessRecyclerOnScrollListener;
 import sniper.farmdrop.adapter.ProducerAdapter;
+import sniper.farmdrop.api.RetrofitServiceProvider;
 import sniper.farmdrop.databinding.FragmentProducerListBinding;
 import sniper.farmdrop.enums.FragmentAction;
 import sniper.farmdrop.enums.ToolbarAction;
@@ -44,7 +47,7 @@ public class ProducerListFragment extends BaseFragment<ProducerListPresenter> im
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPresenter = new ProducerListPresenter(this, new ProducerListRepository());
+        mPresenter = new ProducerListPresenter(this, new ProducerListRepository(RetrofitServiceProvider.getApiServiceInstance(), FarmDropApp.getDb()));
         producerAdapter = new ProducerAdapter(R.layout.list_item_producer_result);
     }
 

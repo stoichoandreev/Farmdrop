@@ -29,7 +29,7 @@ import sniper.farmdrop.constants.Preferences;
 public class RetrofitServiceProvider {
 
     private static final String TAG = "RetroFitProvider";
-    public static final int CONNECT_TIMEOUT_S = 60;
+    public static final int CONNECT_TIMEOUT_S = 30;
 
     private static ApiService instance;
 

@@ -9,7 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.squareup.sqlbrite.BriteDatabase;
+
+import sniper.farmdrop.FarmDropApp;
 import sniper.farmdrop.R;
+import sniper.farmdrop.api.ApiService;
+import sniper.farmdrop.api.RetrofitServiceProvider;
 import sniper.farmdrop.databinding.FragmentProducerDetailsBinding;
 import sniper.farmdrop.enums.FragmentAction;
 import sniper.farmdrop.enums.ToolbarAction;
@@ -41,7 +46,8 @@ public class DetailsProducerFragment extends BaseFragment<DetailsProducerPresent
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPresenter = new DetailsProducerPresenter(this, new DetailsProducerRepository());
+
+        mPresenter = new DetailsProducerPresenter(this, new DetailsProducerRepository(RetrofitServiceProvider.getApiServiceInstance(), FarmDropApp.getDb()));
         final ProducerViewData producerBaseData = getArguments() != null ? (ProducerViewData) getArguments().getSerializable(PRODUCER_DATA) : null;
         //get some data from producer base data and create not full data object about producer details. When the producer details data comes from local cache or API the view will be updated.
         producerDetailsData = ProducerDetailsViewData.fromBasicData(producerBaseData);

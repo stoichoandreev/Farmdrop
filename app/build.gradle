@@ -68,9 +68,12 @@ ext {
     junitRunner = '0.5'
     espresso = '2.2.2'
     mockServer = '3.5.0'
+    assertJ = '3.6.2'
     supportLibrary = '25.0.1'
     retrofit = '2.1.0'
     loggingInterceptor = '3.4.2'
+    javaRX = '1.2.3'
+    javaRX2 = '2.0.1'
     androidRX = '1.2.1'
     rxBinding = '1.0.0'
     picasso = '2.5.2'
@@ -88,7 +91,10 @@ ext {
         compile "com.squareup.retrofit2:converter-gson:$retrofit"
         compile "com.squareup.retrofit2:adapter-rxjava:$retrofit"
         compile "com.squareup.okhttp3:logging-interceptor:$loggingInterceptor"
+        compile "io.reactivex:rxjava:$javaRX"
         compile "io.reactivex:rxandroid:$androidRX"
+        compile "io.reactivex.rxjava2:rxjava:$javaRX2"
+        compile "io.reactivex.rxjava2:rxandroid:$javaRX2"
         compile "com.jakewharton.rxbinding:rxbinding:$rxBinding"
         compile "com.jakewharton.rxbinding:rxbinding-appcompat-v7:$rxBinding"
         compile "com.squareup.picasso:picasso:$picasso"
@@ -111,6 +117,7 @@ ext {
         testCompile "org.powermock:powermock-core:$powermock"
         testCompile "org.powermock:powermock-api-easymock:$powermock"
         testCompile "org.powermock:powermock-module-junit4:$powermock"
+        testCompile "org.assertj:assertj-core:$assertJ"
         testCompile("com.android.support.test.espresso:espresso-contrib:$espresso") {
             exclude module: 'support-annotations'
             exclude group: 'com.android.support', module: 'appcompat'
